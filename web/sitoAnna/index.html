@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Per la mia Patatina 🌸</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sfondo con petali animati -->
+    <div class="petals-container" id="petals-container"></div>
+    
+    <!-- Header romantico -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 class="main-title">
+                Per la mia <span class="highlight">Patatina</span> 🌸
+            </h1>
+            <p class="subtitle">Ti amo tanto tanto amore mio ❤️</p>
+            <div class="heart-animation">💕</div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxjaGVycnklMjBibG9zc29tfGVufDB8fHx8MTc1OTE1MjE2NXww&ixlib=rb-4.1.0&q=85" alt="Cherry Blossoms" class="hero-img">
+        </div>
+    </header>
+
+    <!-- Sezione caratteristiche di Anna -->
+    <section class="about-anna">
+        <div class="container">
+            <h2 class="section-title">I pensieri di annina 💝</h2>
+            <div class="interests-grid">
+                <div class="interest-card minecraft-card" data-testid="minecraft-interest">
+                    <div class="card-icon">🎮</div>
+                    <h3>Minecraft</h3>
+                    <p>I tuoi mondi infiniti e le avventure che condividiamo insieme</p>
+                    <div class="pixel-hearts">❤️💚💙</div>
+                </div>
+                
+                <div class="interest-card flowers-card" data-testid="flowers-interest">
+                    <div class="card-icon">🌸</div>
+                    <h3>Fiori</h3>
+                    <p>Come i fiori di ciliegio, la tua bellezza illumina ogni giorno</p>
+                    <div class="floating-petals">🌸🌺🌼</div>
+                </div>
+                
+                <div class="interest-card love-card" data-testid="love-interest">
+                    <div class="card-icon">💕</div>
+                    <h3>Il nostro amore</h3>
+                    <p>ti amerò per sempre, in ogni universo possibile</p>
+                    <div class="love-hearts">💖💝💗</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Il Giardino Annino -->
+    <section class="garden-section">
+        <div class="container">
+            <h2 class="section-title garden-title">🌸 Il Giardino Annino 🌸</h2>
+            <p class="garden-description">Un giardino speciale dove ogni fiore rappresenta un momento felice insieme</p>
+            
+            <div class="garden-grid">
+                <div class="flower-pot" data-testid="flower-1" onclick="bloomFlower(1)">
+                    <div class="flower flower-1">🌸</div>
+                    <div class="pot">🪴</div>
+                    <div class="message hidden" id="message-1">Il primo giorno che ti ho vista</div>
+                </div>
+                
+                <div class="flower-pot" data-testid="flower-2" onclick="bloomFlower(2)">
+                    <div class="flower flower-2">🌺</div>
+                    <div class="pot">🪴</div>
+                    <div class="message hidden" id="message-2">Il nostro primo bacino</div>
+                </div>
+                
+                <div class="flower-pot" data-testid="flower-3" onclick="bloomFlower(3)">
+                    <div class="flower flower-3">🌼</div>
+                    <div class="pot">🪴</div>
+                    <div class="message hidden" id="message-3">Ogni avventura in Minecraft</div>
+                </div>
+                
+                <div class="flower-pot" data-testid="flower-4" onclick="bloomFlower(4)">
+                    <div class="flower flower-4">🌻</div>
+                    <div class="pot">🪴</div>
+                    <div class="message hidden" id="message-4">Il nostro futuro insieme</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione animali carini -->
+    <section class="cute-animals">
+        <div class="container">
+            <h2 class="section-title">I nostri patatini 🐱</h2>
+            <div class="animals-grid">
+                <div class="animal-card" data-testid="kitten-card">
+                    <div class="animal-emoji">🐱</div>
+                    <h3>Gattini</h3>
+                    <p>La Pic</p>
+                </div>
+                
+                <div class="animal-card" data-testid="teddy-card">
+                    <div class="animal-emoji">🧸</div>
+                    <h3>Orsetti</h3>
+                    <p>Davidino</p>
+                </div>
+                
+                <div class="animal-card dog-card" data-testid="dog-card">
+                    <div class="animal-emoji">🐶</div>
+                    <h3>Cagnolini</h3>
+                    <p>Il Bubino</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Messaggio finale -->
+    <footer class="love-message">
+        <div class="container">
+            <div class="final-message">
+                <h2>Anna, amore mio 💕</h2>
+                <p>Ogni petalo che cade è un bacio che ti mando</p>
+                <p>Ogni fiore che sboccia è un "ti amo" sussurrato al vento</p>
+                <p class="signature">Con tutto il mio amore, <br><strong>Davide</strong> 💖</p>
+            </div>
+            <div class="cherry-blossom-footer">
+                <img src="https://images.unsplash.com/photo-1522748906645-95d8adfd52c7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHw0fHxjaGVycnklMjBibG9zc29tfGVufDB8fHx8MTc1OTE1MjE2NXww&ixlib=rb-4.1.0&q=85" alt="Soft Cherry Blossoms" class="footer-img">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pulsante per più petali -->
+    <button class="more-petals-btn" onclick="createPetalBurst()" data-testid="more-petals-btn">
+        Più petali per Anna 🌸
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
